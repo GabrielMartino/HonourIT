@@ -13,6 +13,16 @@ padding: 0;
 margin: 0;
   }
 
+input{
+  height: 42px;
+box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.25);
+background: #EBEBEB;
+border-radius: 10px;
+border: none;
+width: 100%;
+
+}
+
 /*BUTTON STYLES*/
 .icon-button{
     width: 32px;
@@ -66,13 +76,54 @@ padding: 16px;
 background-color: #F2F2F2;
 }
 
+.button-contained{
+  box-shadow: 0px 2px 0px #FEA800, inset 1px -1px 0px #FEA800;
+  border-radius: 4px;
+  text-decoration: none;
+  
+  background-color: #FFFFFF;
+  height: 42px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  
+}
+
+.button-contained img{
+  padding-right: 8px;
+}
+
+
+.button-partner{
+  box-shadow: 0px 2px 0px #FEA800, inset 1px -1px 0px #FEA800;
+  border-radius: 4px;
+  height: fit-content;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  padding: 16px;
+  
+}
+
 /*BUTTON STYLES*/
 
 /*TASK CARD STYLES*/
-.task-card{
+.card-container{
     box-shadow: 0px 4px 4px rgba(35, 35, 36, 0.25);
     border-radius: 10px;
     border: none;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
 }
 
 .task-time{
@@ -154,12 +205,41 @@ font-size: 27.9895px;
 line-height: 110%;
 }
 
+.text3{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 110%;
+}
+
+.text3-bold-yellow{
+  font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 102.5%;
+color: #FEA800;
+margin: 0;
+padding: 0;
+}
+
 a{
   text-decoration: none;
 }
 
 .text-dark{
   color: #2e2e2e;
+}
+
+.card-title{
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 110%;
+color: #2E2E2E;
+margin:0;
 }
 
 /*TEXT STYLES*/
