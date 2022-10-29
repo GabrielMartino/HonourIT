@@ -16,7 +16,7 @@
     <header class="d-flex align-items-center justify-content-center justify-content-between py-3 mb-4 col-12">
         <a href="javascript:history.back()" class="d-flex justify-content-start row-cols-md-2 mb-2 mb-md-0 px-2">
             <div>
-            <img onclick="history.back()" src="images/icon-backarrow.svg">
+            <img src="images/icon-backarrow.svg">
         </div>
         </a>
         <div class="d-flex justify-content-center align-items-center  mb-2 mb-md-0 px-2">
@@ -50,81 +50,91 @@
     <!--TEXT BOX-->
     <form action="/action_page.php">
      <br>
-      <input type="text" id="comment" name="comment" value="   What task do you want to do?"><br>
+      <input type="text" id="comment" name="comment" value="   Brush Teeth"><br>
     </form> 
 </div>
 <!--TEXT BOX-->
 <!--TASK NAME-->
 
-<!--DAY SELECTION-->
-<div class="card-container px-3 my-2" style="width: 100vw;">
-    <!--CARD TITLE-->
-      <div class="col-md-4">
-        <p class="card-title">Habit Frequency</p>
-      </div>
-      <!--CARD TITLE-->
-
-      <!--DAY TOGGLES-->
-      <div class="d-flex day-style">
+ <!--DAY TOGGLES-->
+ <div class="d-flex day-style">
         
-       <ul>
-        <li>
-        <input type="checkbox" id="mon" name="mon" value="mon">
-        <label for="mon">Mon</label>
-      </li>
+  <ul>
+   <li>
+   <input type="checkbox" id="mon" name="mon" value="mon" checked>
+   <label for="mon">Mon</label>
+ </li>
 
-      <li>
-        <input type="checkbox" id="tue" name="tue" value="tue">
-        <label for="tue">Tue</label>
-      </li>
+ <li>
+   <input type="checkbox" id="tue" name="tue" value="tue" checked>
+   <label for="tue">Tue</label>
+ </li>
 
-      <li>
-        <input type="checkbox" id="wed" name="wed" value="wed">
-        <label for="wed">Wed</label>
-      </li>
+ <li>
+   <input type="checkbox" id="wed" name="wed" value="wed" checked>
+   <label for="wed">Wed</label>
+ </li>
 
-      <li>
-        <input type="checkbox" id="thu" name="thu" value="thu">
-        <label for="thu">Thu</label>
-      </li>
+ <li>
+   <input type="checkbox" id="thu" name="thu" value="thu" checked>
+   <label for="thu">Thu</label>
+ </li>
 
-      <li>
-        <input type="checkbox" id="fri" name="fri" value="fri">
-        <label for="fri">Fri</label>
-      </li>
+ <li>
+   <input type="checkbox" id="fri" name="fri" value="fri" checked>
+   <label for="fri">Fri</label>
+ </li>
 
-      <li>
-        <input type="checkbox" id="sat" name="sat" value="sat">
-        <label for="sat">Sat</label>
-      </li>
+ <li>
+   <input type="checkbox" id="sat" name="sat" value="sat" checked>
+   <label for="sat">Sat</label>
+ </li>
 
-      <li>
-        <input type="checkbox" id="sun" name="sun" value="sun">
-        <label for="sun">Sun</label>
-      </li>
+ <li>
+   <input type="checkbox" id="sun" name="sun" value="sun" checked>
+   <label for="sun">Sun</label>
+ </li>
 
-        </ul>
-      </div>
-  </div>
+   </ul>
+ </div>
+</div>
 <!--DAY TOGGLES-->
 <!--DAY SELECTION-->
 
 <!--ADD REMINDERS-->
 <div class="card-container px-3 my-2" style="width: 100vw;">
-  <!--CARD TITLE-->
-    <div class="col-md-4">
-      <p class="card-title">Add Reminders</p>
-    </div>
-    <!--CARD TITLE-->
+<!--CARD TITLE-->
+<div class="col-md-4">
+ <p class="card-title">Add Reminders</p>
+</div>
+<!--CARD TITLE-->
 
-    <!--ADD A REMINDER BUTTON-->
-    <div class="col-md-6">
-      <button type="button" class="button-contained" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-          <img src="images/icon-reminder.svg">
-        <h5 class="text3-bold-yellow">Add</h5>
+<!--ADD A REMINDER BUTTON-->
+<div class="col-md-6">
+ <button type="button" class="button-contained" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+     <img src="images/icon-reminder.svg">
+   <h5 class="text3-bold-yellow">Add</h5>
+ </button>
+</div>
+<!--ADD A REMINDER BUTTON-->
+  <!--reminder 1-->
+  <div class="col-md-6">
+   <button type="button" class="reminderCard" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+       <img src="images/icon-reminder-white.svg">
+     <h5 class="text3" style="color: white;">7:30am</h5>
       </button>
-    </div>
-    <!--ADD A REMINDER BUTTON-->
+   
+ </div>
+ <!--reminder 1-->
+    <!--reminder 2-->
+    <div class="col-md-6">
+     <button type="button" class="reminderCard" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+         <img src="images/icon-reminder-white.svg">
+       <h5 class="text3" style="color: white;">8:30pm</h5>
+        </button>
+     
+   </div>
+   <!--reminder 2-->
 
 
 
@@ -133,21 +143,31 @@
 <!--ADD REMINDERS-->
 
 <!--ADD A FRIEND FOR HELP-->
-<div class="card-container px-3 my-2 friends" style="width: 100vw;">
+<div class="card-container px-3 my-2" style="width: 100vw;">
   <!--CARD TITLE-->
     <div class="col-md-4">
       <p class="card-title">Add a friend for help</p>
     </div>
     <!--CARD TITLE-->
 
-    <!--ADD A FRIEND BUTTON-->
-    <a href="add-friend.html" class="col-md-6">
-      <button class="button-contained">
-          <img src="images/icon-person.svg">
-        <h5 class="text3-bold-yellow">Add</h5>
-      </button>
+    <a href="new-task-friendAdded.html" class="col-md-6">
+      <div class="button-partner">
+          <div class="d-flex align-items-center justify-content-between col g-0">
+              <div class="col-md-4">
+                  <img src="images/img-user1.svg">
+              </div>
+              <div class="col-md-6 w-100">
+                <div class="card-body d-flex justify-content-start row px-4 ">
+                  <h5 class="card-title text3 py-1">Dude</h5>
+                  <p class="card-text task-streak py-1">*Related Task Here*</p>
+                </div>
+              </div>
+              <div class="col-md-2">
+                  <img src="images/icon-task-pencil.svg">
+              </div>
+            </div>
+      </div>
     </a>
-    <!--ADD A FRIEND BUTTON-->
 </div>
 
 <!--ADD A FRIEND FOR HELP-->
