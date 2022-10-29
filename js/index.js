@@ -1,13 +1,14 @@
 
 $(document).ready(function(){
     $(".honour").click(function(){
-      $(".honour").find("img").attr("src", "images/icon-honour-selected.svg");
+      
 
-      if ($(".honour").find("img").attr("src", "images/icon-honour-selected.svg")) {
-        console.log('your message');
+
+      if ($(".honour").attr("src")) {
+        $(".honour").attr("src", "images/icon-honour-selected.svg");
       } 
          else {
-        greeting = "Good evening";
+          $(".honour").attr("src", "images/icon-honour.svg");
       }
     });
 
