@@ -31,7 +31,14 @@ var minutes = Swiper(
   })
 );
 
-var seconds = Swiper('.swiper-container.seconds', defaults);
+var seconds = Swiper(
+  '.swiper-container.seconds', 
+  Object.assign({}, defaults, { 
+    initialSlide: 0
+  })
+);
+  hours.on('slideChangeEnd', function () {})
+
 
 var input = document.getElementById('input');
 input.addEventListener('focus', moveLeft);
