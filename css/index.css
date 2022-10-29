@@ -55,6 +55,12 @@ width: 100%;
   height: 40px;
 }
 
+.time-picker{
+  
+  position: fixed;
+  bottom: 0;
+
+}
 
 
 .bottom-content{
@@ -399,15 +405,7 @@ margin:0;
 }
 
 
-.timepicker{
-  display: flex;
-  justify-content:center;
-  width: 100%;
-  position: absolute;
-  cursor: pointer;
-  bottom: 0;
-  margin: 0px 0px;
-}
+
 
 /*POSITIONING*/
 
